@@ -1,14 +1,14 @@
 import React from 'react'
 import { Text, StyleSheet } from 'react-native'
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>Brendino500</Text>
+export default function ComponentsScreen() {
+  return (
+    <Text style={styles.textStyle}>Sup</Text>
+  )
 }
 
 const styles = StyleSheet.create({
-  text: {
+  textStyle: {
     fontSize: 30
   }
 })
-
-export default HomeScreen
