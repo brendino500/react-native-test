@@ -2,22 +2,30 @@ import React from 'react'
 import { View, Text, StyleSheet, FlatList } from 'react-native'
 
 export default function ListScreen() {
-  const names = [{ name: 'Opal' }, { name: 'Irene' },
-    { name: 'Penny' },
-    { name: 'Gary' },
+  const names = [{ name: 'Milly 🚣‍♂️' }, { name: 'Lianne 🍞' },
+    { name: 'Luis ☄️' },
+    { name: 'Sophie' },
     { name: 'Dominic' },
     { name: 'Wilbur' },
     { name: 'Erin' },
     { name: 'Jason' }
   ]
   return (
-    <FlatList 
+    <FlatList
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      keyExtractor={(names) => names.name} 
       data={names} 
       renderItem={({ item }) => {
-        return <Text>{item.name}</Text>
+        return <Text style={styles.textStyle}>{item.name}</Text>
       }} 
     />
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  textStyle: {
+    marginVertical: 20,
+    fontSize: 40
+  }
+})
