@@ -12,11 +12,11 @@ const HomeScreen = (props) => {
         }}
         title="Go to Components Demo"
       />
-      <TouchableOpacity onPress={() => {
-        props.navigation.navigate('List')
-      }}>
-        <Text style={styles.list}>Go to List Demo</Text>
-      </TouchableOpacity>
+      <Button 
+        title="Go to List Demo"
+        onPress={() => props.navigation.navigate('List')} 
+      />
+
     </View>
   )
 }
