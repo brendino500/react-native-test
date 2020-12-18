@@ -8,20 +8,18 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>Brendino500</Text>
       <Button
         onPress={() => {
-          navigation.navigate('Components')
+          navigation.navigate("Components");
         }}
         title="Go to Components Demo"
       />
       <Button
         title="Go to List Demo"
-        onPress={() => navigation.navigate('List')}
+        onPress={() => navigation.navigate("List")}
       />
-      <Button
-        title="Image"
-        onPress={() => navigation.navigate('Image')}
-      />
+      <Button title="Image" onPress={() => navigation.navigate("Image")} />
+      <Button title="Go to Counter Demo" onPress={() => navigation.navigate("Counter")} />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
