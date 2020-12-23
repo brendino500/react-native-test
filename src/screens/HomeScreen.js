@@ -1,8 +1,7 @@
-import React from 'react'
-import { Text, StyleSheet, View, Button } from 'react-native'
+import React from "react";
+import { Text, StyleSheet, View, Button } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
-
   return (
     <View>
       <Text style={styles.text}>Brendino500</Text>
@@ -25,18 +24,22 @@ const HomeScreen = ({ navigation }) => {
         title="Go to Color Demo"
         onPress={() => navigation.navigate("Color")}
       />
+      <Button
+        title="Go to Square Demo"
+        onPress={() => navigation.navigate("Square")}
+      />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
   },
   list: {
     fontSize: 35,
-    color: 'blue'
-  }
-})
+    color: "blue",
+  },
+});
 
-export default HomeScreen
+export default HomeScreen;
